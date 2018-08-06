@@ -1,6 +1,6 @@
 .Hero {
   background-image: url('../../images/hero-min.jpg');
-  height: 920px;
+  height: auto;
   background-size: cover;
   background-position: center;
 }
@@ -24,9 +24,4 @@
   padding: 10px 0;
   font-weight: bold;
   font-size: 20px;
-}
-
-.Hero .warning {
-  color: gold;
-  text-decoration: underline;
 }

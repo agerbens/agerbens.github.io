@@ -1,5 +1,6 @@
 import React from 'react';
 import SiteLayout from '../layouts/site';
+import UnderConstruction from '../components/UnderConstruction';
 
 const WorkPage = () => (
   <SiteLayout>
@@ -10,7 +11,9 @@ const WorkPage = () => (
         padding: '300px 50px',
         backgroundColor: 'black',
       }}
-    />
+    >
+      <UnderConstruction />
+    </div>
   </SiteLayout>
 );
 

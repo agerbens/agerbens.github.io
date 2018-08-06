@@ -1,5 +1,6 @@
 import React from 'react';
 import SiteLayout from '../layouts/site';
+import UnderConstruction from '../components/UnderConstruction';
 
 const ContactPage = () => (
   <SiteLayout>
@@ -10,7 +11,9 @@ const ContactPage = () => (
         padding: '300px 50px',
         backgroundColor: 'black',
       }}
-    />
+    >
+      <UnderConstruction />
+    </div>
   </SiteLayout>
 );
 
