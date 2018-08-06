@@ -1,33 +1,26 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
+      background: 'lightgray',
+      maxWidth: 1024,
+      padding: '50px 0px',
+      margin: '10px auto',
     }}
   >
-    <div
+    <Link
+      to="/"
       style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
+        color: 'black',
+        textDecoration: 'none',
+        margin: 'auto',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          © ADAMGERBENS.COM 2018
-        </Link>
-      </h1>
-    </div>
+      © ADAMGERBENS.COM 2018
+    </Link>
   </div>
-)
+);
 
-export default Header
+export default Header;

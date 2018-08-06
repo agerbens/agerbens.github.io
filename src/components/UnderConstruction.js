@@ -6,7 +6,8 @@ export default function UnderConstruction() {
     <span style={{ display: 'flex', alignItems: 'center' }}>
       <Warning />
       <p className="warning">
-        This site is currently under construction. Check back soon for updates.
+        Under construction. I will be adding content and making the site
+        responsive in the coming days.
       </p>
     </span>
   );

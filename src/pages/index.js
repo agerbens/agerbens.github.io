@@ -22,8 +22,11 @@ const IndexPage = () => (
         <p>
           For inquiries, please send me an email at{' '}
           <a href="mailto:adam.gerbens@gmail.com">adam.gerbens@gmail.com</a>, or
-          check the <Link to="/contact">contact page</Link> for more
-          information.
+          check the{' '}
+          <Link exact to="/contact">
+            contact page
+          </Link>{' '}
+          for more information.
         </p>
         <UnderConstruction />
       </div>
