@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          © ADAMGERBENS.COM 2018
         </Link>
       </h1>
     </div>

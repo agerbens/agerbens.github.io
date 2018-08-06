@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
+import SiteLayout from '../layouts/site';
 
-import Layout from '../components/layout'
+import './styles/home.css';
 
 const IndexPage = () => (
-  <Layout>
-    <h1>Under Construction</h1>
-    <a href="/">Coming Soon!</a>
-  </Layout>
-)
+  <SiteLayout>
+    <div className="Hero" />
+  </SiteLayout>
+);
 
-export default IndexPage
+export default IndexPage;
