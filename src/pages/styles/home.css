@@ -1,6 +1,31 @@
 .Hero {
-  background-image: url('../../images/hero.jpg');
+  background-image: url('../../images/hero-dark-20.jpg');
   height: 920px;
   background-size: cover;
   background-position: center;
+}
+
+.HeroGroup {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 300px 50px;
+}
+
+.Hero h1 {
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  font-size: 48px;
+  padding: 0 0 50px 0;
+}
+
+.Hero p {
+  color: rgba(255, 255, 255, .8);
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Hero .warning {
+  color: gold;
 }

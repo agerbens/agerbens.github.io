@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 import './reset.css';
+import './site.css';
 
 const SiteLayout = ({ children, data }) => (
   <StaticQuery
