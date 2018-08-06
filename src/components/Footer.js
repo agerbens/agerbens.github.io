@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
-const Header = ({ siteTitle }) => (
+const Footer = () => (
   <div
     style={{
       background: 'lightgray',
@@ -9,18 +8,7 @@ const Header = ({ siteTitle }) => (
       padding: '50px 0px',
       margin: '10px auto',
     }}
-  >
-    <Link
-      to="/"
-      style={{
-        color: 'black',
-        textDecoration: 'none',
-        margin: 'auto',
-      }}
-    >
-      © ADAMGERBENS.COM 2018
-    </Link>
-  </div>
+  />
 );
 
-export default Header;
+export default Footer;

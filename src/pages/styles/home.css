@@ -28,4 +28,5 @@
 
 .Hero .warning {
   color: gold;
+  text-decoration: underline;
 }

@@ -3,7 +3,14 @@ import SiteLayout from '../layouts/site';
 
 const ContactPage = () => (
   <SiteLayout>
-    <h1>Contact page</h1>
+    <div
+      style={{
+        margin: '0 auto',
+        width: '100%',
+        padding: '300px 50px',
+        backgroundColor: 'black',
+      }}
+    />
   </SiteLayout>
 );
 
