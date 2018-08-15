@@ -3,12 +3,14 @@ import React from 'react';
 const Footer = () => (
   <div
     style={{
-      background: 'lightgray',
-      maxWidth: 1024,
+      backgroundColor: '#f0f3f5',
       padding: '50px 0px',
-      margin: '10px auto',
+      height: '100%',
+      display: 'block'
     }}
-  />
+  >
+
+  </div>
 );
 
 export default Footer;

@@ -1,14 +1,15 @@
 .Hero {
   background-image: url('../../images/hero-min.jpg');
-  height: auto;
   background-size: cover;
   background-position: center;
+  height: auto;
 }
 
 .HeroGroup {
   margin: 0 auto;
   max-width: 1024px;
-  padding: 300px 50px;
+  height: 100%;
+  padding: 200px 50px;
 }
 
 .Hero h1 {
@@ -17,6 +18,11 @@
   color: white;
   font-size: 48px;
   padding: 0 0 50px 0;
+  opacity: 0;
+  animation: HeroAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero p {
@@ -24,4 +30,21 @@
   padding: 10px 0;
   font-weight: bold;
   font-size: 20px;
+  opacity: 0;
+  animation: HeroAnimation 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Hero svg {
+  animation: HeroAnimation 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
