@@ -1,10 +1,11 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link, Element } from 'react-scroll';
+
+import './styles/home.css';
 
 import SiteLayout from '../layouts/site';
 import UnderConstruction from '../components/UnderConstruction';
-
-import './styles/home.css';
+import Work from '../components/Work';
 
 const IndexPage = () => (
   <SiteLayout>
@@ -22,15 +23,18 @@ const IndexPage = () => (
         <p>
           For inquiries, please send me an email at{' '}
           <a href="mailto:adam.gerbens@gmail.com">adam.gerbens@gmail.com</a>, or
-          check the{' '}
-          <Link exact to="/contact">
-            contact page
-          </Link>{' '}
-          for more information.
+          check the <Link to="contact">contact section</Link> for more
+          information.
         </p>
         <UnderConstruction />
       </div>
     </div>
+    <Element name="work">
+      <Work />
+    </Element>
+    <Element name="contact">
+      <div>Contact Section</div>
+    </Element>
   </SiteLayout>
 );
 

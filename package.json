@@ -5,10 +5,12 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "next",
+    "gatsby-plugin-google-analytics": "next",
     "gatsby-plugin-react-helmet": "next",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-scroll": "^1.7.10"
   },
   "keywords": [
     "gatsby"

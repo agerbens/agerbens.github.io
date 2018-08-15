@@ -1,18 +1,29 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link } from 'react-scroll';
 
 import './header.css';
 
 const Header = () => (
   <div className="Header">
     <div className="HeaderGroup">
-      <Link exact to="/" activeClassName="active">
-        Home
-      </Link>
-      <Link exact to="/work" activeClassName="active">
+      <Link
+        to="work"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-50}
+        duration={500}
+      >
         Work
       </Link>
-      <Link exact to="/contact" activeClassName="active">
+      <Link
+        to="contact"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
         Contact
       </Link>
     </div>

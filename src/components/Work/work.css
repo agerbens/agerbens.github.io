@@ -1,0 +1,19 @@
+.WorkSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.ProjectCard {
+  display: flex;
+  width: 320px;
+  margin: 10px 10px;
+  border: 1px solid black;
+  height: 200px;
+}
+
+.ProjectCardTitle {
+  font-weight: bold;
+}
