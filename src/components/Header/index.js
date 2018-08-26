@@ -7,6 +7,16 @@ const Header = () => (
   <div className="Header">
     <div className="HeaderGroup">
       <Link
+        to="about"
+        activeClass="active"
+        spy={true}
+        smooth={true}
+        offset={-50}
+        duration={500}
+      >
+        About
+      </Link>
+      <Link
         to="work"
         activeClass="active"
         spy={true}

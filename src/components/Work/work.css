@@ -10,6 +10,10 @@
   margin: 20px 0;
 }
 
+.WorkContent {
+  margin: 10px 0;
+}
+
 .ProjectCardGroup {
   display: flex;
   flex-wrap: wrap;

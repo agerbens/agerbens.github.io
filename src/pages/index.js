@@ -5,6 +5,7 @@ import './styles/home.css';
 
 import SiteLayout from '../layouts/site';
 import Work from '../components/Work';
+import About from '../components/About';
 
 const IndexPage = () => (
   <SiteLayout>
@@ -27,15 +28,17 @@ const IndexPage = () => (
         </p>
       </div>
     </div>
-    <Element name="about">
-      <div>About me</div>
-    </Element>
-    <Element name="work">
-      <Work />
-    </Element>
-    <Element name="contact">
-      <div>Contact Section</div>
-    </Element>
+    <div className="Content">
+      <Element name="about">
+        <About />
+      </Element>
+      <Element name="work">
+        <Work />
+      </Element>
+      <Element name="contact">
+        <div>Contact Section</div>
+      </Element>
+    </div>
   </SiteLayout>
 );
 
