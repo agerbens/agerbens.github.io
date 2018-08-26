@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class ProjectCard extends Component {
@@ -9,7 +9,14 @@ class ProjectCard extends Component {
     const { project } = this.props;
     return (
       <div className="ProjectCard">
-        <div className="ProjectCardTitle">{project.name}</div>
+        <a
+          className="ProjectCardTitle"
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {project.name}
+        </a>
       </div>
     );
   }

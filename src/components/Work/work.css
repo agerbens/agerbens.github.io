@@ -1,19 +1,33 @@
 .WorkSection {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   max-width: 1024px;
   margin: 0 auto;
 }
 
-.ProjectCard {
+.WorkTitle {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.ProjectCardGroup {
   display: flex;
-  width: 320px;
-  margin: 10px 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ProjectCard {
+  display: inline-block;
+  padding: 5px 5px;
+  margin: 5px 5px;
   border: 1px solid black;
-  height: 200px;
+  background: rgb(32, 44, 57);
 }
 
 .ProjectCardTitle {
+  padding: 10px 10px;
+  font-size: 14px;
   font-weight: bold;
+  color: white;
+  white-space: nowrap;
 }
