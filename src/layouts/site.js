@@ -35,7 +35,7 @@ const SiteLayout = ({ children, data }) => (
             },
           ]}
         />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         {children}
         <Footer />
       </Fragment>

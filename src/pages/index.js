@@ -4,8 +4,10 @@ import { Link, Element } from 'react-scroll';
 import './styles/home.css';
 
 import SiteLayout from '../layouts/site';
+
 import Work from '../components/Work';
 import About from '../components/About';
+import Contact from '../components/Contact';
 
 const IndexPage = () => (
   <SiteLayout>
@@ -35,8 +37,9 @@ const IndexPage = () => (
       <Element name="work">
         <Work />
       </Element>
+      <hr />
       <Element name="contact">
-        <div>Contact Section</div>
+        <Contact />
       </Element>
     </div>
   </SiteLayout>
