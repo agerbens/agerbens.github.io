@@ -13,10 +13,12 @@
 }
 
 .Hero h1 {
+  font-family: Abel, Open Sans, sans-serif;
   font-weight: bold;
-  margin: 0;
+  font-size: 140px;
+  text-align: center;
+  margin: 0 auto;
   color: white;
-  font-size: 48px;
   padding: 0 0 50px 0;
   opacity: 0;
   animation: HeroAnimation;

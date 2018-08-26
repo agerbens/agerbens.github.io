@@ -4,14 +4,13 @@ import { Link, Element } from 'react-scroll';
 import './styles/home.css';
 
 import SiteLayout from '../layouts/site';
-import UnderConstruction from '../components/UnderConstruction';
 import Work from '../components/Work';
 
 const IndexPage = () => (
   <SiteLayout>
     <div className="Hero">
       <div className="HeroGroup">
-        <h1>Professional Web Application Developer</h1>
+        <h1>Full Stack Dev</h1>
         <p>
           Hi! I'm Adam Gerbens, a Full-Stack Web Developer living in Mesa, AZ.
         </p>
@@ -26,9 +25,11 @@ const IndexPage = () => (
           check the <Link to="contact">contact section</Link> for more
           information.
         </p>
-        <UnderConstruction />
       </div>
     </div>
+    <Element name="about">
+      <div>About me</div>
+    </Element>
     <Element name="work">
       <Work />
     </Element>

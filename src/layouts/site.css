@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Abel|Open+Sans|Roboto');
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,Helvetica,Roboto,sans-serif;
+  font-family: Roboto, Open Sans, sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.3;
   background-color: white;
 }
 
 a {
-  color: lightseagreen;
+  cursor: pointer;
+  color: #00ff75;
   text-decoration: none;
 }
