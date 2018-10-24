@@ -3,6 +3,7 @@ import './contact.css';
 
 import GitHubLogo from '../../images/GitHub-Mark-64px.png';
 import LinkedInLogo from '../../images/In-Black-94px-TM.png';
+import MailIcon from '../../images/mail.png';
 
 class Contact extends Component {
   render() {
@@ -10,11 +11,12 @@ class Contact extends Component {
       <div className="ContactSection">
         <div className="ContactTitle">Contact me</div>
         <div className="ContactSocialButtons">
-          <a
-            className="ContactEmail"
-            href="mailto:adam.gerbens@gmail.com?subject=Hello from adamgerbens.com"
-          >
-            Email
+          <a href="mailto:adam.gerbens@gmail.com?subject=Hello from adamgerbens.com">
+            <img
+              className="ContactSocialButton"
+              src={MailIcon}
+              alt="Email adam.gerbens@gmail.com"
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/adam-gerbens-b06342121/"

@@ -12,12 +12,12 @@ export default [
     url: 'https://resourcecommand.org',
   },
   {
-    name: 'Hotelogical',
-    url: 'https://hotelogical.com',
-  },
-  {
     name: 'Arizona State Board for Charter Schools',
     url: 'https://online.asbcs.az.gov',
+  },
+  {
+    name: 'Hotelogical',
+    url: 'https://hotelogical.com',
   },
   {
     name: 'Helia Care',
@@ -25,10 +25,10 @@ export default [
   },
   {
     name: 'ShipItHub',
-    url: 'http://shipithub.com'
+    url: 'http://shipithub.com',
   },
   {
     name: 'BodeTree',
-    url: 'https://www.bodetree.com'
-  }
-]
+    url: 'https://www.bodetree.com',
+  },
+];

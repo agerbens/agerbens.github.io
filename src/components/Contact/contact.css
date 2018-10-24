@@ -12,7 +12,7 @@
 }
 
 .ContactSocialButtons {
-  margin: 50px 0;
+  margin: 35px 0;
   width: 40%;
   display: flex;
   flex-direction: row;
@@ -20,13 +20,20 @@
   justify-content: space-around;
 }
 
+@media (max-width: 768px) {
+  .ContactSocialButton {
+    padding: 0 20px;
+  }
+}
+
 .ContactEmail {
   background-color: red;
-  padding: 15px 30px;
+  padding: 7px 15px;
   font-weight: bold;
   color: white;
 }
 
 .ContactSocialButton {
-  max-width: 40px;
+  width: 50px;
+  height: auto;
 }

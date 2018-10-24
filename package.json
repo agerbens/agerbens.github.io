@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "next",
-    "gatsby-plugin-google-analytics": "next",
-    "gatsby-plugin-react-helmet": "next",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "gatsby": "^2.0.29",
+    "gatsby-plugin-google-analytics": "^2.0.6",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-helmet": "^5.2.0",
     "react-scroll": "^1.7.10"
   },
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",
-    "prettier": "^1.13.7"
+    "prettier": "^1.14.3"
   },
   "repository": {
     "type": "git",

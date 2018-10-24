@@ -6,7 +6,6 @@ import './styles/home.css';
 import SiteLayout from '../layouts/site';
 
 import Work from '../components/Work';
-import About from '../components/About';
 import Contact from '../components/Contact';
 
 const IndexPage = () => (
@@ -31,9 +30,6 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="Content">
-      <Element name="about">
-        <About />
-      </Element>
       <Element name="work">
         <Work />
       </Element>
