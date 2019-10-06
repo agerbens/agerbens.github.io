@@ -1,26 +1,25 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# Adam Gerbens' User Page
+This is my personal site, viewable at http://adamgerbens.com.
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+It is hosted with [GitHub Pages](https://pages.github.com/), which only serves user pages from the `master` branch. 
 
-## Install
+Because of this, the `master` branch contains the built site. The source lives on any other branch. 
 
+Built with [Gatsby.js](https://www.gatsbyjs.org/)
+
+### Develop
 Make sure that you have the Gatsby CLI program installed:
 ```sh
-npm install --global gatsby-cli
+npm i -g gatsby-cli
 ```
 
-And run from your CLI:
+Then to run the site locally at http://localhost:8000, run:
 ```sh
-gatsby new gatsby-example-site
+npm i && npm run develop
 ```
 
-Then you can run it by:
+### Build & Deploy
+There is a `deploy` script that builds the site for production and commits the changes to the `master` branch:
 ```sh
-cd gatsby-example-site
-gatsby develop
+npm run deploy
 ```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
