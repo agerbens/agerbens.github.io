@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, Element } from 'react-scroll';
 import classNames from 'classnames';
 
@@ -8,11 +8,15 @@ import SiteLayout from '../layouts/site';
 
 import Work from '../components/Work';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const IndexPage = () => {
-  const [isDarkMode, setIsDarkMode] = useState(
-    matchMedia('(prefers-color-scheme: dark)').matches
-  );
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches);
+    }
+  }, []);
 
   const classes = {
     home: true,
@@ -59,6 +63,7 @@ const IndexPage = () => {
             </Element>
           </div>
         </div>
+        <Footer />
       </div>
     </SiteLayout>
   );
