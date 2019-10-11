@@ -1,15 +1,15 @@
 export default [
   {
+    name: 'Be Connected AZ',
+    url: 'https://beconnectedaz.org',
+  },
+  {
     name: 'LittleBird Living',
     url: 'https://www.littlebirdliving.com',
   },
   {
     name: 'Tathata Golf',
     url: 'https://www.tathatagolf.com',
-  },
-  {
-    name: 'Military Veterans Resource Network',
-    url: 'https://resourcecommand.org',
   },
   {
     name: 'Arizona State Board for Charter Schools',
