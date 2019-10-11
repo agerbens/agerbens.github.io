@@ -1,0 +1,129 @@
+.home {
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  padding: 150px 50px;
+  background-color: #f0f3f5;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1024px;
+
+  * {
+    animation: hero-animation 3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  h1 {
+    padding: 20px 0 50px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    opacity: 0;
+  }
+
+  p {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 0;
+    animation-delay: 1s;
+  }
+
+  .avatar {
+    cursor: pointer;
+    background-image: url('../../images/me.png');
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #444;
+  }
+}
+
+.dark {
+  background-color: #444;
+  color: #e4e4e4;
+
+  a {
+    color: #e39777;
+  }
+
+  .avatar {
+    border: 5px solid #f0f3f5;
+  }
+
+  .hero-section, .hero-content {
+    background-color: #444;
+  }
+
+  .main-section, .main-content {
+    background-color: #393939;
+  }
+
+  .Footer {
+    background-color: #444;
+  }
+
+  .ProjectCard {
+    background-color: #222;
+  }
+
+  .ProjectCardTitle {
+    color: white;
+  }
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+@keyframes hero-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-section {
+    padding: 50px 50px;
+  }
+
+  .hero-content {
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+

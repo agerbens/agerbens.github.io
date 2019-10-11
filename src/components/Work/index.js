@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ProjectCard from './ProjectCard';
 
-import './work.css';
+import './work.scss';
 
 import projects from './projects';
 
@@ -11,7 +11,7 @@ class Work extends Component {
       <div className="WorkSection">
         <div className="WorkTitle">My Work</div>
         <p className="WorkContent">
-          I have been employed at Synapse Studios in Tempe, AZ for the last 5
+          I have been employed at Synapse Studios in Tempe, AZ for the last 6
           years, starting out in 2013 as a QA engineer before transitioning to
           become a Web Application Developer in January 2015.
         </p>
