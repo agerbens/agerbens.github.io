@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
@@ -20,7 +20,7 @@ const SiteLayout = ({ children, data }) => (
       }
     `}
     render={data => (
-      <Fragment>
+      <>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -37,7 +37,7 @@ const SiteLayout = ({ children, data }) => (
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         {children}
         <Footer />
-      </Fragment>
+      </>
     )}
   />
 );

@@ -1,6 +1,7 @@
 import React from 'react';
 import SiteLayout from '../layouts/site';
 
+// TODO Add a custom 404
 const NotFoundPage = () => (
   <SiteLayout>
     <h1>NOT FOUND</h1>
