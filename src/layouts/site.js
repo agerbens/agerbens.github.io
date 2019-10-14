@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-
-import Footer from '../components/Footer';
+import favicon from '../images/favicon.png';
 
 import './reset.css';
 import './site.css';
@@ -32,6 +31,9 @@ const SiteLayout = ({ children, data }) => (
               name: 'keywords',
               content: 'adam,gerbens,web,application,developer,portfolio',
             },
+          ]}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` },
           ]}
         />
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
