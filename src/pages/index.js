@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link, Element } from 'react-scroll';
 import classNames from 'classnames';
 
-import './styles/home.scss';
+import './styles/home.css';
 
 import SiteLayout from '../layouts/site';
 
@@ -10,13 +10,10 @@ import Work from '../components/Work';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
+import useDarkMode from '../hooks/useDarkMode';
+
 const IndexPage = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setIsDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches);
-    }
-  }, []);
+  const [isDarkMode, setIsDarkMode] = useDarkMode();
 
   const classes = {
     home: true,

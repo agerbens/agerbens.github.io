@@ -1,33 +1,48 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+
 import ProjectCard from './ProjectCard';
 
-import './work.scss';
+import Paragraph from '../Paragraph';
+import Title from '../Title';
 
 import projects from './projects';
+
+const ProjectCardGroup = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+`;
+
+const WorkContainer = styled.div`
+  justify-content: center;
+  max-width: 1024px;
+  margin: 50px auto;
+`;
 
 class Work extends Component {
   render() {
     return (
-      <div className="WorkSection">
-        <div className="WorkTitle">My Work</div>
-        <p className="WorkContent">
+      <WorkContainer>
+        <Title>My Work</Title>
+        <Paragraph>
           I have been employed at Synapse Studios in Tempe, AZ for the last 6
           years, starting out in 2013 as a QA engineer before transitioning to
           become a Web Application Developer in January 2015.
-        </p>
+        </Paragraph>
 
-        <p className="WorkContent">
+        <Paragraph>
           Prior to that I worked at Arizona Public Services in Phoenix, AZ, as
           an IT Systems Analyst and Application Support Intern.
-        </p>
+        </Paragraph>
 
-        <div className="WorkTitle">Projects I've worked on:</div>
-        <div className="ProjectCardGroup">
+        <Title>Projects I've worked on:</Title>
+        <ProjectCardGroup>
           {projects.map(project => (
             <ProjectCard key={project.name} project={project} />
           ))}
-        </div>
-      </div>
+        </ProjectCardGroup>
+      </WorkContainer>
     );
   }
 }
