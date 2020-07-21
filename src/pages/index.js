@@ -21,7 +21,7 @@ const IndexPage = () => {
   };
 
   return (
-    <SiteLayout>
+    <SiteLayout title="Home">
       <div className={classNames(classes)}>
         <div className="hero-section">
           <div className="hero-content">
