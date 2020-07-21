@@ -7,7 +7,7 @@ import favicon from '../images/favicon.png';
 import './reset.css';
 import './site.css';
 
-const SiteLayout = ({ children, data }) => (
+const SiteLayout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -18,7 +18,7 @@ const SiteLayout = ({ children, data }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}

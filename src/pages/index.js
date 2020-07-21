@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 import useDarkMode from '../hooks/useDarkMode';
 
 const IndexPage = () => {
-  const [isDarkMode, setIsDarkMode] = useDarkMode();
+  const [isDarkMode, setDarkMode] = useDarkMode();
 
   const classes = {
     home: true,
@@ -28,7 +28,7 @@ const IndexPage = () => {
             <div
               className="avatar"
               title={`Click Me For ${isDarkMode ? 'Light' : 'Dark'} Mode!`}
-              onClick={() => setIsDarkMode(!isDarkMode)}
+              onClick={() => setDarkMode(!isDarkMode)}
             />
             <div>
               <h1>Hi! I'm Adam Gerbens</h1>
