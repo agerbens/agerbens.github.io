@@ -1,4 +1,12 @@
-export default [
+export const projects = [
+  {
+    name: 'GateHawk',
+    url: 'https://gatehawk.com/',
+  },
+  {
+    name: "Zark Parking",
+    url: "https://zarkparking.com/",
+  },
   {
     name: 'Be Connected AZ',
     url: 'https://beconnectedaz.org',
@@ -22,10 +30,6 @@ export default [
   {
     name: 'Helia Care',
     url: 'https://www.heliacare.com',
-  },
-  {
-    name: 'ShipItHub',
-    url: 'http://shipithub.com',
   },
   {
     name: 'BodeTree',

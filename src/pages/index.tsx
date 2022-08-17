@@ -9,15 +9,14 @@ import SiteLayout from '../layouts/site';
 import Work from '../components/Work';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-
-import useDarkMode from '../hooks/useDarkMode';
+import { useDarkMode } from '../hooks/useDarkMode';
 
 const IndexPage = () => {
-  const [isDarkMode, setDarkMode] = useDarkMode();
+  const [isDarkModeEnabled, setDarkModeEnabled] = useDarkMode();
 
   const classes = {
     home: true,
-    dark: isDarkMode,
+    dark: isDarkModeEnabled,
   };
 
   return (
@@ -27,16 +26,19 @@ const IndexPage = () => {
           <div className="hero-content">
             <div
               className="avatar"
-              title={`Click Me For ${isDarkMode ? 'Light' : 'Dark'} Mode!`}
-              onClick={() => setDarkMode(!isDarkMode)}
+              title={`Click Me For ${
+                isDarkModeEnabled ? 'Light' : 'Dark'
+              } Mode!`}
+              onClick={() => setDarkModeEnabled(!isDarkModeEnabled)}
+              onKeyDown={() => {} /* do nothing */}
             />
             <div>
               <h1>Hi! I'm Adam Gerbens</h1>
               <p>
                 I'm a Full-Stack Web Developer living in Mesa, AZ. I have been
-                building interactive web applications for the last five years,
-                focusing primarily on modern javascript development with React
-                and Node.js.
+                building interactive web applications since 2015, focusing
+                primarily on modern javascript development with React and
+                Node.js.
               </p>
               <p>
                 For inquiries, please send me an email at{' '}

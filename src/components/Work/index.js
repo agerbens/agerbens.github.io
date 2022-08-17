@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard';
 import Paragraph from '../Paragraph';
 import Title from '../Title';
 
-import projects from './projects';
+import { projects } from './projects';
 
 const ProjectCardGroup = styled.div`
   display: flex;
