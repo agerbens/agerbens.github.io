@@ -23,6 +23,7 @@
   "devDependencies": {
     "@types/react-helmet": "^6.0.0",
     "@types/react-scroll": "^1.8.4",
+    "gh-pages": "^4.0.0",
     "prettier": "2.0.5"
   },
   "keywords": [
@@ -37,7 +38,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && cp CNAME ./public && cp README.md ./public && gh-pages"
+    "deploy": "gatsby build && cp CNAME ./public && cp README.md ./public && gh-pages -d public"
   },
   "repository": {
     "type": "git",
