@@ -4,8 +4,8 @@ export const projects = [
     url: 'https://gatehawk.com/',
   },
   {
-    name: "Zark Parking",
-    url: "https://zarkparking.com/",
+    name: 'Zark Parking',
+    url: 'https://zarkparking.com/',
   },
   {
     name: 'Be Connected AZ',
@@ -30,9 +30,5 @@ export const projects = [
   {
     name: 'Helia Care',
     url: 'https://www.heliacare.com',
-  },
-  {
-    name: 'BodeTree',
-    url: 'https://www.bodetree.com',
   },
 ];

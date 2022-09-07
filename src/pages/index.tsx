@@ -6,7 +6,7 @@ import './styles/home.css';
 
 import SiteLayout from '../layouts/site';
 
-import Work from '../components/Work';
+import { Work } from '../components/Work';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import { useDarkMode } from '../hooks/useDarkMode';
