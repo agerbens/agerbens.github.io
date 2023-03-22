@@ -1,0 +1,15 @@
+.project-card-container {
+  display: inline-block;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  border: 1px solid black;
+  background: rgb(32, 44, 57);
+}
+
+.project-card-title {
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+}

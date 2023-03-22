@@ -1,0 +1,18 @@
+.work-paragraph {
+  margin: 10px 0;
+}
+.work-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.work-project-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.work-container {
+  justify-content: center;
+  max-width: 1024px;
+  margin: 50px auto;
+}
