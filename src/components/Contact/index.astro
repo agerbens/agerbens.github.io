@@ -1,0 +1,40 @@
+---
+import React from 'react';
+import { Image } from '@astrojs/image/components';
+import './contact.css';
+
+import GitHubLogo from '../../images/GitHub-Mark-64px.png';
+import LinkedInLogo from '../../images/In-Black-94px-TM.png';
+import MailIcon from '../../images/mail.png';
+---
+
+<div class="ContactSection">
+  <div class="ContactTitle">Contact me</div>
+  <div class="ContactSocialButtons">
+    <a href="mailto:adam.gerbens@gmail.com?subject=Hello from adamgerbens.com">
+      <Image
+        className="ContactSocialButton"
+        src={MailIcon}
+        alt="Email adam.gerbens@gmail.com"
+      />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/adam-gerbens-b06342121/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image
+        class="ContactSocialButton"
+        src={LinkedInLogo}
+        alt="LinkedIn Logo"
+      />
+    </a>
+    <a
+      href="https://github.com/agerbens"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image class="ContactSocialButton" src={GitHubLogo} alt="GitHub Logo" />
+    </a>
+  </div>
+</div>

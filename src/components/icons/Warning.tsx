@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Warning() {
+export const Warning = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,4 +15,4 @@ export default function Warning() {
       />
     </svg>
   );
-}
+};

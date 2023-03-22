@@ -28,20 +28,18 @@
   text-align: center;
   font-weight: bold;
   font-size: 48px;
-  opacity: 0;
 }
 
 .hero-content p {
   padding: 10px 0;
   font-weight: bold;
   font-size: 20px;
-  opacity: 0;
   animation-delay: 1s;
 }
 
 .hero-content .avatar {
   cursor: pointer;
-  background-image: url('../../images/me.png');
+  background-image: url('../images/me.png');
   background-size: contain;
   background-position: center;
   height: 100px;
@@ -50,67 +48,10 @@
   border: 5px solid #444;
 }
 
-.dark {
-  background-color: #444;
-  color: #e4e4e4;
-}
-
-.dark a {
-  color: #e39777;
-}
-
-.dark .avatar {
-  border: 5px solid #f0f3f5;
-}
-
-.dark .hero-section {
-  background-color: #444;
-}
-
-.dark .hero-content {
-  background-color: #444;
-}
-
-.dark .main-section {
-  background-color: #393939;
-}
-
-.dark .main-content {
-  background-color: #393939;
-}
-
-.dark .Footer {
-  background-color: #444;
-}
-
-.dark .ProjectCard {
-  background-color: #222;
-}
-
-.dark .ProjectCardTitle {
-  color: white;
-}
-
-.dark .main-section {
-  display: flex;
-  justify-content: center;
-}
-
 .main-content {
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 50px;
-}
-
-@keyframes hero-animation {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media (max-width: 1024px) {

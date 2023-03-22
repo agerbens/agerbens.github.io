@@ -1,0 +1,57 @@
+---
+// Component Imports
+import React from 'react';
+import { Image } from '@astrojs/image/components';
+import { Work } from '../components/Work';
+import Contact from '../components/Contact/index.astro';
+import { Footer } from '../components/Footer';
+import me from '../images/me.png';
+
+import '../styles/reset.css';
+import '../styles/global.css';
+import '../styles/home.css';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+  </head>
+  <body>
+    <main>
+      <div class="hero-section">
+        <div class="hero-content">
+          <div class="avatar"></div>
+          <div>
+            <h1>Hi! I'm Adam Gerbens</h1>
+            <p>
+              I'm a Full-Stack Web Developer living in Mesa, AZ. I have been
+              building interactive web applications since 2015, focusing
+              primarily on modern javascript development with React and Node.js.
+            </p>
+            <p>
+              For inquiries, please send me an email at{' '}
+              <a href="mailto:adam.gerbens@gmail.com">
+                adam.gerbens@gmail.com
+              </a>
+              , or check the contact section below for more information.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="main-section">
+        <div class="main-content">
+          <Work />
+          <hr />
+          <Contact />
+        </div>
+      </div>
+      <Footer />
+    </main>
+  </body>
+</html>
